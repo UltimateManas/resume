@@ -1,4 +1,14 @@
 {
-  "Name":"Manas Mangal Pattanaik",
-  "Address":"BBSR"
+  "projects": [
+    {
+      "Name": "DiscMan",
+      "Type": "Web Application",
+      "Duration": "2019 Aug - 2021 Jun",
+      "Tools Used": "VS 2019, SSMS 2018, PostgreSQL 4",
+      "Technologies": "DotNet Core 3.1, C# with ROP, MVC, Web API, React, Postgre SQL, AWS",
+      "Role": "Developer",
+      "SDLC": "Agile",
+      "Description": "Disclosure Management is an application that has been developed for the employees to disclose any conflicts so that the companies can accordingly plan a mitigation and avoid any legal complications in future."
+    }
+  ]
 }
