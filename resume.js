@@ -17,4 +17,11 @@ $(function () {
     }
     $("#ulPros").html(html);
   });
+
+  $("#linkDownload").click(function(){
+    const element = document.getElementById('resumeBody');
+        html2pdf()
+            .from(element)
+            .save();
+  });
 });
