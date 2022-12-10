@@ -9,6 +9,27 @@
       "Role": "Developer",
       "SDLC": "Agile",
       "Description": "Disclosure Management is an application that has been developed for the employees to disclose any conflicts so that the companies can accordingly plan a mitigation and avoid any legal complications in future."
+    },
+    {
+      "Name": "GTZ-Command Center 2.0",
+      "Type": "Web Application",
+      "Duration": "March 2017 – May 2019",
+      "Tools Used": "Visual Studio 2015, SSMS 2014",
+      "Technologies": "C#, MVC, Aurelia, Angular, Web API, SQL Server, RabbitMQ, Javascript",
+      "Role": "Developer",
+      "SDLC": "Agile Development",
+      "Description": "Command Center 2.0 is a 3rd party logistics web portal used to book shipments, make online payments, view reports, managing users, address books and products."
+    },
+    {
+      "Name": "HRMS",
+      "Type": "Web Application",
+      "Team Size":8,
+      "Client":"Inhouse Project",
+      "Duration": "January 2016 – February 2017",
+      "Tools Used": "VS-2013, , Sql Server 2012",
+      "Technologies": "C#, ASP.NET MVC, Devexpress, JavaScript",
+      "Role": "Developer",
+      "Description": "HRMS is a Human Resource Management System which manages employee details of the organization, recruitment process, employee performance details, admin dept. task of the organization."
     }
   ]
 }
