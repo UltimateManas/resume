@@ -1,0 +1,31 @@
+p,
+table,
+ul {
+  font-family: Candara;
+}
+ul {
+  line-height: 150%;
+}
+li {
+  margin-bottom: 5px;
+}
+body {
+  background-color: snow;
+}
+td {
+  vertical-align: top;
+}
+
+img {
+  border-radius: 20%;
+}
+th, td {
+  text-align: left;
+  font-size: 13px;
+  vertical-align: top;
+}
+#divBody{
+  width: 70%;
+  border: 2px black solid;
+  padding: 20px;
+}
