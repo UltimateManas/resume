@@ -25,7 +25,11 @@ th, td {
   vertical-align: top;
 }
 #divBody{
-  width: 70%;
+  width: 100%;
   border: 2px black solid;
   padding: 20px;
+  margin: 10px;
+}
+body{
+    align-content: center;
 }
