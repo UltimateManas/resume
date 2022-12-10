@@ -7,7 +7,7 @@ $(function () {
       var tbl = "<table><tbody>";
       for (var prop in proj) {
         if (prop != "Name") {
-          tbl += "<tr><th>" + prop + "</th><td>" + proj[prop] + "</td></tr>";
+          tbl += "<tr><th>" + prop + ":</th><td>" + proj[prop] + "</td></tr>";
         }
       }
       tbl += "</tbody></table>";
