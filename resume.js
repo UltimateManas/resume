@@ -6,7 +6,9 @@ $(function () {
       html += "<li><div><h3>" + proj.Name + "</h3>";
       var tbl = "<table><tbody>";
       for (var prop in proj) {
-        tbl += "<tr><th>" + prop + "</th><td>" + proj[prop] + "</td></tr>";
+        if (prop != "Name") {
+          tbl += "<tr><th>" + prop + "</th><td>" + proj[prop] + "</td></tr>";
+        }
       }
       tbl += "</tbody></table>";
       html += tbl;
