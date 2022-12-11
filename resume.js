@@ -1,6 +1,7 @@
 $(function () {
   console.log("jQuery Loaded");
   $.getJSON("./profile.json", function (data) {
+    console.log(data);
     fillProjects(data, "ulPros");
     fillExps(data, "ulExps");
   });
@@ -10,7 +11,7 @@ $(function () {
     for (var proj of data.projects) {
       html += "<li><div><h3>" + proj.Name + "</h3>";
       var tbl = "<table><tbody>";
-      for (var prop in Object.keys(proj)) {
+      for (var prop of Object.keys(proj)) {
         if (prop != "Name") {
           tbl += "<tr><th>" + prop + ":</th><td>" + proj[prop] + "</td></tr>";
         }
