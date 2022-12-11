@@ -25,7 +25,7 @@ $(function () {
   function fillExps(data, targetEleId) {
     var html = "";
     for (let i = 0; i < data.exps.length; i++) {
-      html += "<li>" + exp + "</li>";
+      html += "<li>" + exps[i] + "</li>";
     }
     $("#" + targetEleId).html(html);
   }
