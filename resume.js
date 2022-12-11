@@ -10,7 +10,7 @@ $(function () {
     for (var proj of data.projects) {
       html += "<li><div><h3>" + proj.Name + "</h3>";
       var tbl = "<table><tbody>";
-      for (var prop in proj) {
+      for (var prop of proj) {
         if (prop != "Name") {
           tbl += "<tr><th>" + prop + ":</th><td>" + proj[prop] + "</td></tr>";
         }
