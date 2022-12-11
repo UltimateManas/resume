@@ -23,13 +23,19 @@
     {
       "Name": "HRMS",
       "Type": "Web Application",
-      "Team Size":8,
-      "Client":"Inhouse Project",
+      "Team Size": 8,
+      "Client": "Inhouse Project",
       "Duration": "January 2016 – February 2017",
       "Tools Used": "VS-2013, , Sql Server 2012",
       "Technologies": "C#, ASP.NET MVC, Devexpress, JavaScript",
       "Role": "Developer",
       "Description": "HRMS is a Human Resource Management System which manages employee details of the organization, recruitment process, employee performance details, admin dept. task of the organization."
     }
+  ],
+  "exps": [
+    "<b>SolarWinds</b> as Technical Lead from 2021 November(Continue).",
+    "<b>Global Logic</b>as Associate Consultant from 2019 July to 2021 August.",
+    "<b>Dream Orbit Softech Ltd.</b>as Senior Software Engineer from 2017 Mar to 2019 May.",
+    "<b>Esquire Infolab Ltd</b> as Software Engineer from 2013 Oct to 2017 february."
   ]
 }
