@@ -8,6 +8,7 @@ ul {
 }
 li {
   margin-bottom: 5px;
+  font-size: 15px;
 }
 body {
   background-color: white;
@@ -21,7 +22,7 @@ img {
 }
 th, td {
   text-align: left;
-  font-size: 13px;
+  font-size: 15px;
   vertical-align: top;
 }
 #divBody{
