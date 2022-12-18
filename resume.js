@@ -3,12 +3,32 @@ $(function () {
   $.getJSON("./profile.json", function (data) {
     console.log(data);
     fillUL(data.summary, "ulSum");
+    fillTable(data.skills,"divSkills");
     fillProjects(data.projects, "ulPros");
     fillUL(data.exps, "ulExps");
   });
 
-  function fillSummary(){
+  function fillSummary() {}
 
+  function fillUL(data, targetEleId) {
+    var html = "";
+    for (let i = 0; i < data.length; i++) {
+      html += "<li>" + data[i] + "</li>";
+    }
+    $("#" + targetEleId).html(html);
+  }
+
+  function fillTable(data, targetEleId) {
+    var html = "";
+    for (var proj of data) {
+      var tbl = "<table><tbody>";
+      for (var prop of Object.keys(proj)) {
+        tbl += "<tr><th>" + prop + ":</th><td>" + proj[prop] + "</td></tr>";
+      }
+      tbl += "</tbody></table>";
+      html += tbl;
+    }
+    $("#" + targetEleId).html(html);
   }
 
   function fillProjects(data, targetEleId) {
@@ -24,14 +44,6 @@ $(function () {
       tbl += "</tbody></table>";
       html += tbl;
       html += "</div></li>";
-    }
-    $("#" + targetEleId).html(html);
-  }
-
-  function fillUL(data, targetEleId) {
-    var html = "";
-    for (let i = 0; i < data.length; i++) {
-      html += "<li>" + data[i] + "</li>";
     }
     $("#" + targetEleId).html(html);
   }

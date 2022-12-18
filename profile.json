@@ -1,5 +1,5 @@
 {
-  "summary":[
+  "summary": [
     "Having total 9+ years of IT experiences on development and implementation of business application using Microsoft Technologies. (C#, ASP .NET , MVC, Entity Framework, Web API, Angular, JavaScript, JQuery, HTML, SQL SERVER).",
     "Exposure to end-to-end development of various applications, right from requirement analysis to system study, designing, coding, de-bugging and implementation. Adept in handling the coding functions.",
     "Good at developing re-usable, understandable and performance oriented code.",
@@ -7,6 +7,18 @@
     "Team player with effective communication skills and proven abilities in resolving complex issues.",
     "Working under agile methodologies."
   ],
+  "skills": { 
+    "Languages": "C#, Javascript",
+    "Database":"MS SQL Server",
+    "Server Side Technologies":"ASP.Net, ASP.Net Core",
+    "Client Side Technologies":"JQuery, Typescipt, Angular",
+    "Web Serers":"IIS, Kestrel",
+    "Business Services":"Web API",
+    "Web Desining Tools":"HTML, CSS, Javascript",
+    "Code Design Patterns":"Repository, Singleton, Factory, Builder",
+    "Source Control":"GIT, SVN, VSS",
+    "Could Technologies":"AWS(S3, Lambda, SQS), Azure(Fnction, Service Bus)"
+   },
   "projects": [
     {
       "Name": "DiscMan",
