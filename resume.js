@@ -3,7 +3,7 @@ $(function () {
   $.getJSON("./profile.json", function (data) {
     console.log(data);
     fillUL(data.summary, "ulSum");
-    fillTable(data.skills,"divSkills");
+    fillTableFromObj(data.skills,"divSkills");
     fillProjects(data.projects, "ulPros");
     fillUL(data.exps, "ulExps");
   });
@@ -18,16 +18,14 @@ $(function () {
     $("#" + targetEleId).html(html);
   }
 
-  function fillTable(data, targetEleId) {
+  function fillTableFromObj(obj, targetEleId) {
     var html = "";
-    for (var proj of data) {
       var tbl = "<table><tbody>";
-      for (var prop of Object.keys(proj)) {
-        tbl += "<tr><th>" + prop + ":</th><td>" + proj[prop] + "</td></tr>";
+      for (var prop of Object.keys(obj)) {
+        tbl += "<tr><th>" + prop + ":</th><td>" + obj[prop] + "</td></tr>";
       }
       tbl += "</tbody></table>";
       html += tbl;
-    }
     $("#" + targetEleId).html(html);
   }
 
