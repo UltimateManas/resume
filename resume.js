@@ -2,13 +2,18 @@ $(function () {
   console.log("jQuery Loaded");
   $.getJSON("./profile.json", function (data) {
     console.log(data);
-    fillProjects(data, "ulPros");
-    fillExps(data, "ulExps");
+    fillUL(data.summary, "ulSum");
+    fillProjects(data.projects, "ulPros");
+    fillUL(data.exps, "ulExps");
   });
+
+  function fillSummary(){
+
+  }
 
   function fillProjects(data, targetEleId) {
     var html = "";
-    for (var proj of data.projects) {
+    for (var proj of data) {
       html += "<li><div><h3>" + proj.Name + "</h3>";
       var tbl = "<table><tbody>";
       for (var prop of Object.keys(proj)) {
@@ -23,10 +28,10 @@ $(function () {
     $("#" + targetEleId).html(html);
   }
 
-  function fillExps(data, targetEleId) {
+  function fillUL(data, targetEleId) {
     var html = "";
-    for (let i = 0; i < data.exps.length; i++) {
-      html += "<li>" + data.exps[i] + "</li>";
+    for (let i = 0; i < data.length; i++) {
+      html += "<li>" + data[i] + "</li>";
     }
     $("#" + targetEleId).html(html);
   }
