@@ -2,13 +2,36 @@ $(function () {
   console.log("jQuery Loaded");
   $.getJSON("./profile.json", function (data) {
     console.log(data);
-    fillProjects(data, "ulPros");
-    fillExps(data, "ulExps");
+    fillUL(data.summary, "ulSum");
+    fillTableFromObj(data.skills,"divSkills");
+    fillProjects(data.projects, "ulPros");
+    fillUL(data.exps, "ulExps");
   });
+
+  function fillSummary() {}
+
+  function fillUL(data, targetEleId) {
+    var html = "";
+    for (let i = 0; i < data.length; i++) {
+      html += "<li>" + data[i] + "</li>";
+    }
+    $("#" + targetEleId).html(html);
+  }
+
+  function fillTableFromObj(obj, targetEleId) {
+    var html = "";
+      var tbl = "<table><tbody>";
+      for (var prop of Object.keys(obj)) {
+        tbl += "<tr><th>" + prop + ":</th><td>" + obj[prop] + "</td></tr>";
+      }
+      tbl += "</tbody></table>";
+      html += tbl;
+    $("#" + targetEleId).html(html);
+  }
 
   function fillProjects(data, targetEleId) {
     var html = "";
-    for (var proj of data.projects) {
+    for (var proj of data) {
       html += "<li><div><h3>" + proj.Name + "</h3>";
       var tbl = "<table><tbody>";
       for (var prop of Object.keys(proj)) {
@@ -19,14 +42,6 @@ $(function () {
       tbl += "</tbody></table>";
       html += tbl;
       html += "</div></li>";
-    }
-    $("#" + targetEleId).html(html);
-  }
-
-  function fillExps(data, targetEleId) {
-    var html = "";
-    for (let i = 0; i < data.exps.length; i++) {
-      html += "<li>" + data.exps[i] + "</li>";
     }
     $("#" + targetEleId).html(html);
   }
